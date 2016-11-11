@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3ca9cb97-1c48-4a1b-ba91-94d9770785b3"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="e15d6a83-d092-4a30-9b3b-b1078e6fad96"
+        name="Car"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="75e75207-3969-45c7-a0ef-f002db9e9ce4"
+            name="regNo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dfe3f43-1d40-4837-ac45-42364cc5f8b1"
+                LastKnownName="string"
+                LastKnownLocation="Package1_1037.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="09e8e14f-79c2-439e-b95c-fc17b34d1d75"
+            name="model"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="5dfe3f43-1d40-4837-ac45-42364cc5f8b1"
+                LastKnownName="string"
+                LastKnownLocation="Package1_1037.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="065c58a7-d74f-40c7-bd7f-d756dc4832c1"
+            name="AntalDøre"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f2d18e40-a973-4d71-b13f-52a1540d726c"
+                LastKnownName="int"
+                LastKnownLocation="Package1_1037.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5dfe3f43-1d40-4837-ac45-42364cc5f8b1"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f2d18e40-a973-4d71-b13f-52a1540d726c"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a3dee28-4cfe-4a12-81a1-2255e8861b15"
+        name="CarList"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="f2651535-2952-4d56-9a26-c59638344c9a"
+            isDerived="false"
+            sourceEndRoleName="CarList"
+            targetEndRoleName="Car"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e15d6a83-d092-4a30-9b3b-b1078e6fad96"
+              LastKnownName="Car"
+              LastKnownLocation="Package1_1037.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="034ee546-6eba-45cb-8523-0c936071e74a"
+                  name="CarList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="98923701-18ac-446e-98c8-2a2a67fd3f97"
+                  name="Car"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
